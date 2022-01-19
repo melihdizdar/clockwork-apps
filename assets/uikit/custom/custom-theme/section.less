@@ -52,4 +52,34 @@
 // Miscellaneous
 // ========================================================================
 
-.hook-section-misc() {}
+.hook-section-misc() {
+    //Buraya mobil için gerekli css propertyleri yazılacak
+    .line{
+        border-bottom: 0.5px solid #E7E7E7;
+    }
+    .kidcardHeader{
+        font-size: 18px;
+        line-height: 20px;
+    }
+    .kidcardContent{
+        line-height: 24px;
+        font-size: 15px;
+    }
+    .paragraph{
+        font-size: 15px;
+        line-height: 22px;
+    }
+    .centerHeader{
+        font-weight: 600;
+        line-height: 30px;
+    }
+    .navbarFont{
+        font-weight: 600;
+        line-height: 14px;
+    }
+    //Buraya masaüstü için gerekli css propertyleri yazılacak.
+    @media(min-width: @breakpoint-medium){
+        //padding: top right bottom left
+        //padding top-bottom right-left
+    }
+}
