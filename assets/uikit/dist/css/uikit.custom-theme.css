@@ -5323,7 +5323,7 @@ ul.uk-nav-sub {
   column-gap: 0.25em;
   /* 3 */
   box-sizing: border-box;
-  min-height: 100px;
+  min-height: 60px;
   padding: 0 15px;
   /* 4 */
   font-size: 16px;
