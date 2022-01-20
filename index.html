@@ -206,7 +206,7 @@
                         <div class="uk-width-2-1">
                             <div class="uk-width-1-1@m">
                                 <div class="uk-text-large centerHeader galleryPadding">
-                                    Galeri
+                                    Slider
                                 </div>
                             </div>
                         </div>
@@ -275,7 +275,20 @@
             </div>
         </seciton>
         <!-- Slideshow Section-->
-        <section class="uk-section">
+        <section class="uk-section uk-padding-remove-top">
+            <div class="uk-container">
+                <div class="uk-margin-auto uk-text-center">
+                    <div class="uk-grid-medium" uk-grid>
+                        <div class="uk-width-2-1">
+                            <div class="uk-width-1-1@m">
+                                <div class="uk-text-large centerHeader galleryPadding">
+                                    Slideshow
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="uk-container">
                 <div uk-slideshow="animation:pull; autoplay: true; autoplay-interval:2000;" class="uk-position-relative uk-visible-toggle">
                     <ul class="uk-slideshow-items">
@@ -306,6 +319,44 @@
                         <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
                     </div>
                 </div>
+            </div>
+        </section>
+        <!-- Accordion Section-->
+        <section class="uk-section uk-padding-remove-top">
+            <div class="uk-container">
+                <div class="uk-margin-auto uk-text-center">
+                    <div class="uk-grid-medium" uk-grid>
+                        <div class="uk-width-2-1">
+                            <div class="uk-width-1-1@m">
+                                <div class="uk-text-large centerHeader galleryPadding">
+                                    Accordion
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-container">
+                <ul uk-accordion="collapsible: true; animation: false;" uk-accordion>
+                    <li class="accordionClass">
+                        <a class="uk-accordion-title uk-animation-toggle" href="#">Header 1</a>
+                        <div class="uk-accordion-content uk-animation-slide-left-small">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </li>
+                    <li class="accordionClass">
+                        <a class="uk-accordion-title uk-animation-toggle" href="#">Header 2</a>
+                        <div class="uk-accordion-content uk-animation-slide-left-small">
+                            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor reprehenderit.</p>
+                        </div>
+                    </li>
+                    <li class="accordionClass">
+                        <a class="uk-accordion-title uk-animation-toggle" href="#">Header 3</a>
+                        <div class="uk-accordion-content uk-animation-slide-left-small">
+                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.</p>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </section>
     </main>
