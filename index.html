@@ -274,6 +274,40 @@
                 </div>
             </div>
         </seciton>
+        <!-- Slideshow Section-->
+        <section class="uk-section">
+            <div class="uk-container">
+                <div uk-slideshow="animation:pull; autoplay: true; autoplay-interval:2000;" class="uk-position-relative uk-visible-toggle">
+                    <ul class="uk-slideshow-items">
+                        <li>
+                            <img data-src="assets/images/slider-6.jpeg" alt="slider-6" class="uk-width-1-1" uk-img uk-cover>
+                            <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                                <h3 class="uk-margin-remove">Header 1</h3>
+                                <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img data-src="assets/images/slider-4.jpeg" alt="slider-4" class="uk-width-1-1" uk-img uk-cover>
+                            <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                                <h3 class="uk-margin-remove">Header 2</h3>
+                                <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img data-src="assets/images/slider-2.jpeg" alt="slider-2" class="uk-width-1-1" uk-img uk-cover>
+                            <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                                <h3 class="uk-margin-remove">Header 3</h3>
+                                <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="uk-light">
+                        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+                        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer></footer>
     <script src="assets/uikit/dist/js/uikit.min.js"></script>
