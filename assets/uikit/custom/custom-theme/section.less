@@ -24,8 +24,8 @@
 
 @section-muted-background:                        @global-muted-background;
 
-@section-primary-background:                      @global-primary-background;
-@section-primary-color-mode:                      light;
+@section-primary-background:                      #B1D0E0;
+@section-primary-color-mode:                      #FFF;
 
 @section-secondary-background:                    @global-secondary-background;
 @section-secondary-color-mode:                    light;
@@ -83,11 +83,44 @@
     .mediumMarginTop{
         margin-top: 100px;
     }
+    .largeMarginTop{
+        margin-top: 120px;
+    }
     .largeMarginBottom{
         margin-bottom: 120px;
     }
     .mediumPadding{
         padding: 60px;
+    }
+    .numeric-dotnav{
+        counter-reset: slider-count;
+    }
+    
+    .numeric-dotnav li {
+        cursor: pointer;
+        position: relative;
+    }
+    .numeric-dotnav li:before{
+        counter-increment: slider-count;
+        content: counter(slider-count);
+        display: block;
+        position: absolute;
+        width: 28px;
+        text-align: center;
+        font-size: 14px;
+        height: 24px;
+    }
+    .numeric-dotnav li a{
+        width: 28px;
+        height: 24px;
+        border-radius: 2px;
+        background-color: white;
+    }
+    .numeric-dotnav li.uk-active a{
+        background-color: #6998AB;
+    }
+    .numeric-dotnav li.uk-active::before{
+        color: white;
     }
     //Buraya masaüstü için gerekli css propertyleri yazılacak.
     @media(min-width: @breakpoint-medium){
