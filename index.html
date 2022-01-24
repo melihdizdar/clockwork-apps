@@ -14,9 +14,25 @@
     <header>
         <nav class="uk-navbar-container" uk-navbar>
             <div class="uk-navbar-left">
-                <a class="uk-navbar-item uk-text-small uk-link-reset" href="#">
+                <a class="uk-navbar-item uk-text-small uk-link-reset" href="#" uk-toggle="target: #offcanvas-nav-primary">
                     <span uk-navbar-toggle-icon></span> <span class="uk-margin-small-left uk-visible@m uk-text-small navbarFont">Menu</span>
                 </a>
+                <!-- Nav Off-Canvas-->
+                <div id="offcanvas-nav-primary" uk-offcanvas="overlay: true">
+                    <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+                        <button class="uk-offcanvas-close" type="button" uk-close></button>
+                        <ul class="uk-nav uk-nav-center uk-margin-auto-vertical">
+                            <h3 class="uk-nav-header uk-text-muted centerHeader uk-text-large">Links</h3>
+                            <li><a href="#">Link 1</a></li>
+                            <li><a href="#">Link 2</a></li>
+                            <li><a href="#">Link 3</a></li>
+                            <li><a href="#">Link 4</a></li>
+                            <li><a href="#">Link 5</a></li>
+                            <li><a href="#">Link 6</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- End - Nav Off-Canvas-->
                 <a class="uk-navbar-item uk-visible@m uk-text-small navbarFont uk-link-reset" href="#">
                     <span class="uk-margin-small-left">TR</span><span uk-icon="icon: chevron-down"></span>
                 </a>
