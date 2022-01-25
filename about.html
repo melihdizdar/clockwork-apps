@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clockwork Firstapp</title>
+    <link rel="stylesheet" href="assets/uikit/dist/css/uikit.custom-theme.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="uk-navbar-container" uk-navbar>
+            <div class="uk-navbar-left">
+                <a class="uk-navbar-item uk-text-small uk-link-reset" href="#" uk-toggle="target: #offcanvas-nav-primary">
+                    <span uk-navbar-toggle-icon></span> <span class="uk-margin-small-left uk-visible@m uk-text-small navbarFont">Menu</span>
+                </a>
+                <!-- Nav Off-Canvas-->
+                <div id="offcanvas-nav-primary" uk-offcanvas="overlay: true">
+                    <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+                        <button class="uk-offcanvas-close" type="button" uk-close></button>
+                        <ul class="uk-nav uk-nav-center uk-margin-auto-vertical">
+                            <h3 class="uk-nav-header uk-text-muted centerHeader uk-text-large">Links</h3>
+                            <li><a href="#">Link 1</a></li>
+                            <li><a href="#">Link 2</a></li>
+                            <li><a href="#">Link 3</a></li>
+                            <li><a href="#">Link 4</a></li>
+                            <li><a href="#">Link 5</a></li>
+                            <li><a href="#">Link 6</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- End - Nav Off-Canvas-->
+                <a class="uk-navbar-item uk-visible@m uk-text-small navbarFont uk-link-reset" href="#">
+                    <span class="uk-margin-small-left">TR</span><span uk-icon="icon: chevron-down"></span>
+                </a>
+                <div class="uk-navbar-dropdown uk-text-small">
+                    <ul class="uk-nav uk-navbar-dropdown-nav uk-link-reset">
+                        <li class="uk-active"><a href="#">TR</a></li>
+                        <li><a href="#">ENG</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="uk-navbar-center">
+                <img src="./assets/images/logo.png" alt="center"/>
+            </div>
+            <div class="uk-navbar-right">
+                <a class="uk-navbar-item" href="#">
+                    <span class="uk-margin-small-left"><a class="uk-button uk-button-default uk-text-bold uk-visible@l" href="#">REZERVASYON</a></span>
+                </a>
+                <a class="uk-navbar-item uk-text-small uk-visible@s navbarFont uk-link-reset" href="tel:+904446338">
+                    <span uk-icon="icon: receiver"></span><span class="uk-margin-small-right">+90 444 63 38</span>
+                </a>
+                <a class="uk-navbar-item uk-hidden@l uk-text-small navbarFont uk-link-reset" href="#">
+                    <span class="uk-margin-small-left">TR</span><span uk-icon="icon: chevron-down"></span>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- Introduction Section-->
+        <section class="uk-section">
+            <div class="uk-container">
+                <div class="uk-grid-medium" uk-grid>
+                    <div class="uk-width-5-6@l">
+                        <div>
+                            <h1>About Us</h1>
+                        </div>
+                        <img data-src="./assets/images/about.jpg" alt="about" class="uk-width-1-1" uk-img>
+                    </div>
+                    <div class="uk-width-1-6@l">
+                        <div class="uk-text-right">
+                            <h6>
+                                PRETIUM MALESUADA CRAS QUISQUE
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-container">
+                <div class="uk-grid-medium uk-flex-right" uk-grid>
+                    <div class="uk-width-1-2@l uk-flex uk-flex-right">
+                        <div class="uk-card uk-card-default smallBorderRadius mediumPadding aboutCard">
+                            <h3 class="uk-card-title">PASSIFIC HOUSE</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ipsum optio, error deserunt assumenda debitis quam, temporibus at voluptatum eos placeat excepturi blanditiis pariatur rerum id ipsam! In fuga nihil, sint, harum tempora veniam dolorem asperiores rem, quia illo aperiam.</p>
+                            <a href="#" class="uk-link-reset">More <span uk-icon="arrow-right"></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+    <script src="assets/uikit/dist/js/uikit.min.js"></script>
+    <script src="assets/uikit/dist/js/uikit-icons.min.js"></script>
+</body>
+</html>
