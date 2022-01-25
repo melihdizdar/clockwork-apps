@@ -2423,58 +2423,58 @@ select.uk-form-width-xsmall {
  * Reserved modifier to make a section overlap another section with an border image
  * Implemented by the theme
  */
-.line {
+.cs-line {
   border-bottom: 0.5px solid #E7E7E7;
 }
-.kidcardHeader {
+.cs-card-header {
   font-size: 18px;
   line-height: 20px;
 }
-.kidcardContent {
+.cs-card-content {
   line-height: 24px;
   font-size: 15px;
 }
-.paragraph {
+.cs-paragraph {
   font-size: 15px;
   line-height: 22px;
 }
-.centerHeader {
+.cs-center-header {
   font-weight: 600;
   line-height: 30px;
 }
-.navbarFont {
+.cs-navbar-font {
   font-weight: 600;
   line-height: 14px;
 }
-.galleryPadding {
-  padding-bottom: 70px;
-}
-.smallMarginTop {
+.cs-margin-small-top {
   margin-top: 50px;
 }
-.mediumMarginTop {
+.cs-margin-medium-top {
   margin-top: 100px;
 }
-.largeMarginTop {
+.cs-margin-large-top {
   margin-top: 120px;
 }
-.xsmallMarginBottom {
+.cs-margin-xsmall-bottom {
   margin-bottom: 20px;
 }
-.smallMarginBottom {
+.cs-margin-small-bottom {
   margin-bottom: 50px;
 }
-.largeMarginBottom {
+.cs-margin-large-bottom {
   margin-bottom: 120px;
 }
-.mediumPadding {
+.cs-padding-medium {
   padding: 60px;
 }
-.aboutCard {
-  width: 75%;
+.cs-padding-gallery {
+  padding-bottom: 70px;
 }
-.textWhite {
+.cs-text-white {
   color: white;
+}
+.cs-border-radius-small {
+  border-radius: 30px;
 }
 .numeric-dotnav {
   counter-reset: slider-count;
@@ -2505,9 +2505,6 @@ select.uk-form-width-xsmall {
 }
 .numeric-dotnav li.uk-active::before {
   color: white;
-}
-.smallBorderRadius {
-  border-radius: 30px;
 }
 @media (min-width: 960px) {
 }
