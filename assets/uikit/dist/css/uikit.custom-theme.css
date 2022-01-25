@@ -2449,17 +2449,29 @@ select.uk-form-width-xsmall {
 .galleryPadding {
   padding-bottom: 70px;
 }
+.smallMarginTop {
+  margin-top: 50px;
+}
 .mediumMarginTop {
   margin-top: 100px;
 }
 .largeMarginTop {
   margin-top: 120px;
 }
+.xsmallMarginBottom {
+  margin-bottom: 20px;
+}
+.smallMarginBottom {
+  margin-bottom: 50px;
+}
 .largeMarginBottom {
   margin-bottom: 120px;
 }
 .mediumPadding {
   padding: 60px;
+}
+.textWhite {
+  color: white;
 }
 .numeric-dotnav {
   counter-reset: slider-count;
@@ -3940,13 +3952,13 @@ select.uk-form-width-xsmall {
 .uk-modal-header {
   display: flow-root;
   padding: 15px 30px;
-  background: #f8f8f8;
+  background: #1A374D;
   border-bottom: 1px solid #6998AB;
 }
 .uk-modal-footer {
   display: flow-root;
   padding: 15px 30px;
-  background: #f8f8f8;
+  background: #EEE;
   border-top: 1px solid #6998AB;
 }
 /*
