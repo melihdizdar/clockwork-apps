@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clockwork Firstapp</title>
+    <link rel="stylesheet" href="assets/uikit/dist/css/uikit.custom-theme.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+    </header>
+    <main>
+        <!-- Full Screen Slideshow Section-->
+        <section>
+            <div>
+                <div uk-slideshow="animation:pull; autoplay: true; autoplay-interval:4000;" class="uk-position-relative uk-visible-toggle">
+                    <ul class="uk-slideshow-items" uk-height-viewport>
+                        <li>
+                            <img data-src="assets/images/slider-6.jpeg" alt="slider-6" class="uk-width-1-1" uk-img uk-cover>
+                            <div class="uk-container">
+                                <div class="uk-overlay uk-overlay-default uk-position-center uk-position uk-text-center uk-transition-slide-top-medium uk-light">
+                                    <p class="uk-margin-remove">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ipsa, iure ratione fugiat necessitatibus, cum expedita numquam, atque aperiam odit neque praesentium ipsam explicabo optio alias a. Laudantium, aut minima.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <img data-src="assets/images/slider-4.jpeg" alt="slider-4" class="uk-width-1-1" uk-img uk-cover>
+                            <div class="uk-container">
+                                <div class="uk-overlay uk-overlay-default uk-position-center uk-position uk-text-center uk-transition-slide-top-medium uk-light">
+                                    <p class="uk-margin-remove">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint nemo animi excepturi. Iste nesciunt ipsa tempora dolorem architecto veniam in quam molestias! Expedita distinctio modi consequuntur similique cum unde dolore.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <img data-src="assets/images/slider-2.jpeg" alt="slider-2" class="uk-width-1-1" uk-img uk-cover>
+                            <div class="uk-container">
+                                <div class="uk-overlay uk-overlay-default uk-position-center uk-position uk-text-center uk-transition-slide-top-medium uk-light">
+                                    <p class="uk-margin-remove">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus laudantium ipsum modi alias eveniet repellendus consectetur et ipsa similique, dicta eligendi sit doloribus distinctio, unde aliquam neque cupiditate nam ut!</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="uk-position-bottom-center uk-position-small">
+                        <ul class="uk-dotnav numeric-dotnav">
+                            <li uk-slideshow-item="0"><a href="#"></a></li>
+                            <li uk-slideshow-item="1"><a href="#"></a></li>
+                            <li uk-slideshow-item="2"><a href="#"></a></li>
+                        </ul>
+                    </div>
+                    <div class="uk-light">
+                        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+                        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+    <script src="assets/uikit/dist/js/uikit.min.js"></script>
+    <script src="assets/uikit/dist/js/uikit-icons.min.js"></script>
+</body>
+</html>
