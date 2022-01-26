@@ -12,58 +12,35 @@
 </head>
 <body>
     <header>
-        <nav class="uk-navbar-container" uk-navbar>
-            <div class="uk-navbar-left">
-                <a class="uk-navbar-item uk-text-small uk-link-reset" href="#" uk-toggle="target: #offcanvas-nav-primary">
-                    <span uk-navbar-toggle-icon></span> <span class="uk-margin-small-left uk-visible@m uk-text-small navbarFont">Menu</span>
-                </a>
-                <!-- Nav Off-Canvas-->
-                <div id="offcanvas-nav-primary" uk-offcanvas="overlay: true">
-                    <div class="uk-offcanvas-bar uk-flex uk-flex-column">
-                        <button class="uk-offcanvas-close" type="button" uk-close></button>
-                        <ul class="uk-nav uk-nav-center uk-margin-auto-vertical">
-                            <h3 class="uk-nav-header uk-text-muted centerHeader uk-text-large">Links</h3>
-                            <li><a href="#">Link 1</a></li>
-                            <li><a href="#">Link 2</a></li>
-                            <li><a href="#">Link 3</a></li>
-                            <li><a href="#">Link 4</a></li>
-                            <li><a href="#">Link 5</a></li>
-                            <li><a href="#">Link 6</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- End - Nav Off-Canvas-->
-                <a class="uk-navbar-item uk-visible@m uk-text-small navbarFont uk-link-reset" href="#">
-                    <span class="uk-margin-small-left">TR</span><span uk-icon="icon: chevron-down"></span>
-                </a>
-                <div class="uk-navbar-dropdown uk-text-small">
-                    <ul class="uk-nav uk-navbar-dropdown-nav uk-link-reset">
-                        <li class="uk-active"><a href="#">TR</a></li>
-                        <li><a href="#">ENG</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="uk-navbar-center">
-                <img src="./assets/images/logo.png" alt="center"/>
-            </div>
-            <div class="uk-navbar-right">
-                <a class="uk-navbar-item" href="#">
-                    <span class="uk-margin-small-left"><a class="uk-button uk-button-default uk-text-bold uk-visible@l" href="#">REZERVASYON</a></span>
-                </a>
-                <a class="uk-navbar-item uk-text-small uk-visible@s navbarFont uk-link-reset" href="tel:+904446338">
-                    <span uk-icon="icon: receiver"></span><span class="uk-margin-small-right">+90 444 63 38</span>
-                </a>
-                <a class="uk-navbar-item uk-hidden@l uk-text-small navbarFont uk-link-reset" href="#">
-                    <span class="uk-margin-small-left">TR</span><span uk-icon="icon: chevron-down"></span>
-                </a>
-            </div>
-        </nav>
     </header>
     <main>
-        <!-- Introduction Section-->
+        <!-- Grid Collapse Section-->
         <section class="uk-section">
+            <div class="uk-container cs-padding-small-bottom">
+                <div class="uk-grid-medium uk-flex-middle" uk-grid>
+                    <div class="uk-width-expand@l uk-width-3-4@s">
+                        <h3 class="cs-center-header">About Us</h3>
+                    </div>
+                    <div class="uk-width-1-6@l uk-width-1-4@s uk-text-right">
+                        <h6><strong>PRETIUM </strong>MALESUADA CRAS QUISQUE</h6>
+                    </div>
+                </div>
+            </div>
             <div class="uk-container">
-                
+                <div class="uk-grid-medium uk-grid-collapse" uk-grid>
+                    <div class="uk-width-5-6@m">
+                        <img data-src="assets/images/about.jpg" alt="about" class="uk-width-1-1" uk-img>
+                    </div>
+                    <div class="uk-width-1-6@m">
+                        <div>
+                            <div class="uk-tile uk-tile-default cs-tile">
+                                <div class="uk-h4 uk-text-bold cs-card-header">PASSIFIC HOUSE</div>
+                                <p class="uk-text-emphasis uk-text-normal cs-card-content uk-text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ipsum optio, error deserunt assumenda debitis quam, temporibus at voluptatum eos placeat excepturi blanditiis pariatur rerum id ipsam! In fuga nihil, sint, harum tempora veniam dolorem asperiores rem, quia illo aperiam.</p>
+                                <a href="#" class="uk-link-reset uk-text-bold">More <span uk-icon="arrow-right"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>

@@ -95,17 +95,25 @@
     .cs-margin-large-bottom{
         margin-bottom: 120px;
     }
+    .cs-padding-small-bottom{
+        padding-bottom: 15px;
+    }
     .cs-padding-medium{
         padding: 60px;
     }
     .cs-padding-gallery{
         padding-bottom: 70px;
     }
+    .cs-tile{
+        margin-top: -125px;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 0;
+        border-radius: 30px;
+        box-shadow: black;
+    }
     .cs-text-white{
         color: white;
-    }
-    .cs-border-radius-small{
-        border-radius: 30px;
     }
     .numeric-dotnav{
         counter-reset: slider-count;
@@ -141,5 +149,14 @@
     @media(min-width: @breakpoint-medium){
         //padding: top right bottom left
         //padding top-bottom right-left
+        .cs-tile{
+            margin-top: 50%;
+            margin-bottom: 0;
+            margin-left: -150px;
+            margin-right: 0;
+        }
+        .cs-padding-small-bottom{
+            padding-bottom: 30px;
+        }
     }
 }
