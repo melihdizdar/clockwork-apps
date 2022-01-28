@@ -1094,43 +1094,44 @@
                     <div class="uk-text-large cs-center-header cs-padding-gallery uk-text-muted">Slider Case 2</div>
                 </div>
             </div>
-            <div class="uk-container uk-flex uk-flex-center">
-                <div class="uk-position-relative uk-width-1-1" tabindex="-1" uk-slider="autoplay:true; autoplay-interval:3000; center:true;">
-                    <ul class="uk-slider-items uk-child-width-1-2" uk-grid>
-                        <!-- slider-parallax="opacity:0.7,1,0.7" -> slidera girmeden önce,sliderdayken,sliderdan çıkınca -->
-                        <li class="uk-padding-remove">
-                            <div class="uk-panel" uk-slider-parallax="scale: 0.9,1,0.9; x: 62;">
-                                <img data-src="assets/images/case-1.jpg" alt="case-1" class="uk-width-1-1" uk-img>
-                            </div>
-                        </li>
-                        <li class="uk-padding-remove">
-                            <div class="uk-panel" uk-slider-parallax="scale: 0.9,1,0.9; x: 62;">
-                                <img data-src="assets/images/case-2.jpg" alt="case-2" class="uk-width-1-1" uk-img>
-                            </div>
-                        </li>
-                        <li class="uk-padding-remove">
-                            <div class="uk-panel" uk-slider-parallax="scale: 0.9,1,0.9; x: 62;">
-                                <img data-src="assets/images/case-3.jpg" alt="case-3" class="uk-width-1-1" uk-img>
-                            </div>
-                        </li>
-                        <li class="uk-padding-remove">
-                            <div class="uk-panel" uk-slider-parallax="scale: 0.9,1,0.9; x: 62;">
-                                <img data-src="assets/images/case-4.jpg" alt="case-4" class="uk-width-1-1" uk-img>
-                            </div>
-                        </li>
-                        <li class="uk-padding-remove">
-                            <div class="uk-panel" uk-slider-parallax="scale: 0.9,1,0.9; x: 62;">
-                                <img data-src="assets/images/case-5.jpg" alt="case-5" class="uk-width-1-1" uk-img>
-                            </div>
-                        </li>
-                        <li class="uk-padding-remove">
-                            <div class="uk-panel" uk-slider-parallax="scale: 0.9,1,0.9; x: 62;">
-                                <img data-src="assets/images/case-6.jpg" alt="case-6" class="uk-width-1-1" uk-img>
-                            </div>
-                        </li>
-                    </ul>
-                    <a class="uk-position-center-left uk-position-small uk-hidden-hover uk-light" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-                    <a class="uk-position-center-right uk-position-small uk-hidden-hover uk-light" href="#" uk-slidenav-next uk-slider-item="next"></a>
+            <div class="uk-container uk-flex uk-flex-center uk-overflow-hidden">
+                <div class="uk-grid-large uk-grid-collapse uk-width-1-1" uk-grid>
+                    <div class="uk-position-relative uk-width-1-1 uk-slider-container uk-margin-auto" style="overflow: visible;" tabindex="-1" uk-slider="autoplay:true; autoplay-interval:3000; center:true; draggable:false;">
+                        <ul class="uk-slider-items uk-child-width-1-2 cs-slider-image" uk-grid>
+                            <li class="uk-padding-remove">
+                                <div class="uk-panel" uk-slider-parallax="scale: 0.9,1,0.9;">
+                                    <img data-src="assets/images/case-1.jpg" alt="case-1" class="uk-width-1-1" uk-img>
+                                </div>
+                            </li>
+                            <li class="uk-padding-remove">
+                                <div class="uk-panel" uk-slider-parallax="scale: 0.9,1,0.9;">
+                                    <img data-src="assets/images/case-2.jpg" alt="case-2" class="uk-width-1-1" uk-img>
+                                </div>
+                            </li>
+                            <li class="uk-padding-remove">
+                                <div class="uk-panel" uk-slider-parallax="scale: 0.9,1,0.9;">
+                                    <img data-src="assets/images/case-3.jpg" alt="case-3" class="uk-width-1-1" uk-img>
+                                </div>
+                            </li>
+                            <li class="uk-padding-remove">
+                                <div class="uk-panel" uk-slider-parallax="scale: 0.9,1,0.9;">
+                                    <img data-src="assets/images/case-4.jpg" alt="case-4" class="uk-width-1-1" uk-img>
+                                </div>
+                            </li>
+                            <li class="uk-padding-remove">
+                                <div class="uk-panel" uk-slider-parallax="scale: 0.9,1,0.9;">
+                                    <img data-src="assets/images/case-5.jpg" alt="case-5" class="uk-width-1-1" uk-img>
+                                </div>
+                            </li>
+                            <li class="uk-padding-remove">
+                                <div class="uk-panel" uk-slider-parallax="scale: 0.9,1,0.9;">
+                                    <img data-src="assets/images/case-6.jpg" alt="case-6" class="uk-width-1-1" uk-img>
+                                </div>
+                            </li>
+                        </ul>
+                        <a class="uk-position-center-left uk-position-small uk-hidden-hover uk-light" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                        <a class="uk-position-center-right uk-position-small uk-hidden-hover uk-light" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                    </div>
                 </div>
             </div>
             <ul class="uk-slider-nav uk-dotnav numeric-dotnav uk-flex-center uk-margin-top uk-margin-remove-left">

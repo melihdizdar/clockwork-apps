@@ -2517,6 +2517,9 @@ select.uk-form-width-xsmall {
 .cs-border-radius-medium {
   border-radius: 50px;
 }
+.cs-slider-image > li {
+  margin-left: -10px !important;
+}
 @media (min-width: 960px) {
   .cs-tile {
     margin-top: 0;
@@ -2525,6 +2528,9 @@ select.uk-form-width-xsmall {
   }
   .cs-padding-small-bottom {
     padding-bottom: 30px;
+  }
+  .cs-slider-image > li {
+    margin-left: -32px !important;
   }
 }
 /* ========================================================================
