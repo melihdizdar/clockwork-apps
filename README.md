@@ -1,1 +1,2 @@
-# clockwork-firstapp
+# clockwork-apps
+Projects done in Clockwork internship
