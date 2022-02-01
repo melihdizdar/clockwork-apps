@@ -1158,6 +1158,142 @@
                 </div>
             </div>
         </section>
+        <!-- Filter Section-->
+        <section class="uk-section">
+            <div class="uk-container">
+                <div class="uk-width-1-2@m uk-margin-auto uk-text-center">
+                    <div class="uk-text-large cs-center-header cs-padding-gallery uk-text-muted" uk-scrollspy="cls: uk-animation-fade; repeat: true; delay:300;">Filter</div>
+                </div>
+            </div>
+            <div class="uk-container">
+                <div uk-filter="target: .js-filter">
+                    <div class="uk-grid-small uk-grid-divider uk-child-width-auto" uk-grid>
+                        <div>
+                            <ul class="uk-subnav uk-subnav-pill" uk-margin>
+                                <li class="uk-active" uk-filter-control><a href="#">All</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul class="uk-subnav uk-subnav-pill" uk-margin>
+                                <li uk-filter-control="filter: [data-gender='male']; group: data-gender"><a href="#">Male</a></li>
+                                <li uk-filter-control="filter: [data-gender='female']; group: data-gender"><a href="#">Female</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul class="uk-subnav uk-subnav-pill" uk-margin>
+                                <li uk-filter-control="filter: [data-hair='blonde']; group: data-hair"><a href="#">Blonde</a></li>
+                                <li uk-filter-control="filter: [data-hair='black']; group: data-hair"><a href="#">Black</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul class="uk-subnav uk-subnav-pill" uk-margin>
+                                <li uk-filter-control="filter: [data-religion='catholic']; group: data-religion"><a href="#">Catholic</a></li>
+                                <li uk-filter-control="filter: [data-religion='judaizm']; group: data-religion"><a href="#">Judaizm</a></li>
+                                <li uk-filter-control="filter: [data-religion='atheist']; group: data-religion"><a href="#">Atheist</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <ul class="js-filter uk-child-width-1-2 uk-child-width-1-4@m uk-text-center" uk-grid="masonry: true">
+                        <li data-gender="male" data-hair="blonde" data-religion="catholic">
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top uk-height-medium">
+                                    <img data-src="https://static.wikia.nocookie.net/southpark/images/c/c4/Eric-cartman.png/revision/latest/scale-to-width-down/350?cb=20180718082504" uk-img class="uk-height-1-1">
+                                </div>
+                                <h3>Eric Cartman</h3>
+                            </div>
+                        </li>
+                        <li data-gender="male" data-hair="blonde" data-religion="judaizm">
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top uk-height-medium">
+                                    <img data-src="https://static.wikia.nocookie.net/southpark/images/6/6f/KennyMcCormick.png/revision/latest/scale-to-width-down/350?cb=20160409020502" uk-img class="uk-height-1-1">
+                                </div>
+                                <h3>Kenny McCormick</h3>
+                            </div>
+                        </li>
+                        <li data-gender="male" data-hair="blonde" data-religion="atheist">
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top uk-height-medium">
+                                    <img data-src="https://static.wikia.nocookie.net/southpark/images/5/57/Boy_with_blue_cap.png/revision/latest/scale-to-width-down/336?cb=20180530142104" uk-img class="uk-height-1-1">
+                                </div>
+                                <h3>Brimmy</h3>
+                            </div>
+                        </li>
+                        <li data-gender="male" data-hair="black" data-religion="catholic">
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top uk-height-medium">
+                                    <img data-src="https://static.wikia.nocookie.net/southpark/images/9/95/Kyle-broflovski.png/revision/latest/scale-to-width-down/350?cb=20190411033301" uk-img class="uk-height-1-1">
+                                </div>
+                                <h3>Kyle Broflovski</h3>
+                            </div>
+                        </li>
+                        <li data-gender="male" data-hair="black" data-religion="judaizm">
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top uk-height-medium">
+                                    <img data-src="https://static.wikia.nocookie.net/southpark/images/c/c6/Stan-marsh-0.png/revision/latest/scale-to-width-down/319?cb=20210107202918" uk-img class="uk-height-1-1">
+                                </div>
+                                <h3>Stan Marsh</h3>
+                            </div>
+                        </li>
+                        <li data-gender="male" data-hair="black" data-religion="atheist">
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top uk-height-medium">
+                                    <img data-src="https://static.wikia.nocookie.net/southpark/images/f/f4/4th-graders-henry-kline.png/revision/latest/scale-to-width-down/350?cb=20170924015322" uk-img class="uk-height-1-1">
+                                </div>
+                                <h3>Henry Kline</h3>
+                            </div>
+                        </li>
+                        <li data-gender="female" data-hair="blonde" data-religion="catholic">
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top uk-height-medium">
+                                    <img data-src="https://static.wikia.nocookie.net/southpark/images/9/9e/Wendyy.png/revision/latest/scale-to-width-down/337?cb=20211125042014" uk-img class="uk-height-1-1">
+                                </div>
+                                <h3>Wendy Testaburger</h3>
+                            </div>
+                        </li>
+                        <li data-gender="female" data-hair="blonde" data-religion="judaizm">
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top uk-height-medium">
+                                    <img data-src="https://static.wikia.nocookie.net/southpark/images/b/b8/HeidiTurnerHat.png/revision/latest/scale-to-width-down/350?cb=20211125042015" uk-img class="uk-height-1-1">
+                                </div>
+                                <h3>Heidi Turner</h3>
+                            </div>
+                        </li>
+                        <li data-gender="female" data-hair="blonde" data-religion="atheist">
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top uk-height-medium">
+                                    <img data-src="https://static.wikia.nocookie.net/southpark/images/7/79/Gpms.png/revision/latest/scale-to-width-down/350?cb=20170911202742" uk-img class="uk-height-1-1">
+                                </div>
+                                <h3>Allie Nelson</h3>
+                            </div>
+                        </li>
+                        <li data-gender="female" data-hair="black" data-religion="catholic">
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top uk-height-medium">
+                                    <img data-src="https://static.wikia.nocookie.net/southpark/images/4/4b/Kindergarteners-hannah-williams.png/revision/latest/scale-to-width-down/350?cb=20170924015423" uk-img class="uk-height-1-1">
+                                </div>
+                                <h3>Hannah Williams</h3>
+                            </div>
+                        </li>
+                        <li data-gender="female" data-hair="black" data-religion="judaizm">
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top uk-height-medium">
+                                    <img data-src="https://static.wikia.nocookie.net/southpark/images/3/3d/Patty-nelson.png/revision/latest/scale-to-width-down/249?cb=20170321034800" uk-img class="uk-height-1-1">
+                                </div>
+                                <h3>Patty Nelson</h3>
+                            </div>
+                        </li>
+                        <li data-gender="female" data-hair="black" data-religion="atheist">
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top uk-height-medium">
+                                    <img data-src="https://static.wikia.nocookie.net/southpark/images/0/08/Tammy.png/revision/latest/scale-to-width-down/238?cb=20150211134602" uk-img class="uk-height-1-1">
+                                </div>
+                                <h3>Tammy Nelson</h3>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
     </main>
     <footer></footer>
     <script src="assets/uikit/dist/js/uikit.min.js"></script>
