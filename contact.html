@@ -23,41 +23,41 @@
             <div class="uk-container">
                 <form class="uk-grid-small uk-flex-center uk-margin-auto uk-width-1-2" uk-grid>
                     <div class="uk-width-1-2@s">
-                        <label class="uk-form-label" for="form-stacked-text">Name</label>
-                        <input class="uk-input" type="text" placeholder="John">
+                        <label class="uk-form-label" for="name">Name</label>
+                        <input class="uk-input" type="text" placeholder="John" id="name" name="name">
                     </div>
                     <div class="uk-width-1-2@s">
-                        <label class="uk-form-label" for="form-stacked-text">Surname</label>
-                        <input class="uk-input" type="text" placeholder="Doe">
+                        <label class="uk-form-label" for="surname">Surname</label>
+                        <input class="uk-input" type="text" placeholder="Doe" id="surname" name="surname">
                     </div>
                     <div class="uk-width-1-1@s">
+                        <label class="uk-form-label" for="email">Email</label>
                         <div class="uk-inline uk-width-1-1@s">
-                            <label class="uk-form-label" for="form-stacked-text">Email</label>
                             <span class="uk-form-icon" uk-icon="icon: mail"></span>
-                            <input class="uk-input" type="tel" placeholder="example@gmail.com">
+                            <input class="uk-input" type="email" placeholder="example@gmail.com" id="email" name="email">
                         </div>
                     </div>
                     <div class="uk-width-1-1@s">
+                        <label class="uk-form-label" for="phone">Phone Number</label>
                         <div class="uk-inline uk-width-1-1@s">
-                            <label class="uk-form-label" for="form-stacked-text">Phone Number</label>
                             <span class="uk-form-icon" uk-icon="icon: phone"></span>
-                            <input class="uk-input" type="tel" placeholder="0522222222">
+                            <input class="uk-input" type="tel" placeholder="0522222222" id="phone" name="phone">
                         </div>
                     </div>
                     <div class="uk-width-1-1@s">
                         <div class="uk-form-label">Gender</div>
                         <div class="uk-form-controls">
-                            <label><input class="uk-radio" type="radio" name="radio1">Man</label>
-                            <label><input class="uk-radio" type="radio" name="radio1">Woman</label>
+                            <label for="gender"><input class="uk-radio" type="radio" name="gender" id="man">Man</label>
+                            <label for="gender"><input class="uk-radio" type="radio" name="gender" id="woman">Woman</label>
                         </div>
                     </div>
                     <div class="uk-width-1-1@s">
-                        <label class="uk-form-label" for="form-stacked-text">Subject</label>
-                        <input class="uk-input" type="text" placeholder="Subject">
+                        <label class="uk-form-label" for="subject">Subject</label>
+                        <input class="uk-input" type="text" placeholder="Subject" id="subject" name="subject">
                     </div>
                     <div class="uk-width-1-1@s">
-                        <div class="uk-form-label">Message</div>
-                        <textarea class="uk-textarea" rows="5" placeholder="Message"></textarea>
+                        <label class="uk-form-label" for="message">Message</label>
+                        <textarea class="uk-textarea" rows="5" placeholder="Message" id="message" name="message"></textarea>
                     </div>
                     <div class="uk-width-1-1@s uk-flex-center uk-flex">
                         <button class="uk-button uk-button-default">Submit</button>
