@@ -16,7 +16,7 @@
     <main>
         <!-- Grid Collapse Section-->
         <section class="uk-section">
-            <div class="uk-container cs-padding-small-bottom uk-flex-middle">
+            <div class="uk-container cs-padding-small-bottom uk-flex-middle" uk-scrollspy="target: > div; cls: uk-animation-fade; delay: 300; repeat:true;">
                 <div class="uk-grid-medium" uk-grid>
                     <div class="uk-width-expand@m uk-width-3-4@s">
                         <h3 class="cs-center-header">About Us</h3>
@@ -27,17 +27,94 @@
                 </div>
             </div>
             <div class="uk-container">
-                <div class="uk-grid-medium uk-grid-collapse uk-flex-middle" uk-grid>
+                <div class="uk-grid-medium uk-grid-collapse uk-flex-middle" uk-grid uk-scrollspy="target: > div; cls: uk-animation-fade; delay: 300; repeat:true;">
                     <div class="uk-width-5-6@m">
                         <img data-src="assets/images/about.jpg" alt="about" class="uk-width-1-1" uk-img>
                     </div>
                     <div class="uk-width-1-6@m">
-                        <div>
-                            <div class="uk-tile uk-tile-default cs-tile">
-                                <div class="uk-h4 uk-text-bold cs-card-header">PASSIFIC HOUSE</div>
-                                <p class="uk-text-emphasis uk-text-normal cs-card-content uk-text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ipsum optio, error deserunt assumenda debitis quam, temporibus at voluptatum eos placeat excepturi blanditiis pariatur rerum id ipsam! In fuga nihil, sint, harum tempora veniam dolorem asperiores rem, quia illo aperiam.</p>
-                                <a href="#" class="uk-link-reset uk-text-bold">More <span uk-icon="arrow-right"></span></a>
+                        <div class="uk-tile uk-tile-default cs-tile">
+                            <div class="uk-h4 uk-text-bold cs-card-header">PASSIFIC HOUSE</div>
+                            <p class="uk-text-emphasis uk-text-normal cs-card-content uk-text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ipsum optio, error deserunt assumenda debitis quam, temporibus at voluptatum eos placeat excepturi blanditiis pariatur rerum id ipsam! In fuga nihil, sint, harum tempora veniam dolorem asperiores rem, quia illo aperiam.</p>
+                            <a href="#" class="uk-link-reset uk-text-bold">More <span uk-icon="arrow-right"></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Background Image Section-->
+        <section class="uk-section uk-background-cover uk-background-fixed uk-cover-container uk-position-relative" style="background-image: url(assets/images/bgimage.jpg);">
+                    <div class="uk-container">
+                        <div class="uk-width-1-2@m uk-margin-auto uk-text-center" uk-scrollspy="cls: uk-animation-fade; delay: 300; repeat:true;">
+                            <div class="uk-text-large cs-center-header cs-padding-gallery uk-text-muted">Background Image</div>
+                        </div>
+                    </div>
+                    <div class="uk-container uk-container-large">
+                        <div class="uk-grid-large uk-child-width-1-2@m uk-flex-middle" uk-grid uk-scrollspy="target: > div; cls: uk-animation-fade; delay: 300; repeat:true;">
+                            <div class="uk-flex uk-flex-middle">
+                                <div class="uk-position-relative uk-visible-toggle uk-light" uk-slider="autoplay: true; autoplay-interval:2000; center:true;">
+                                    <ul class="uk-slider-items uk-grid">
+                                        <li class="uk-width-1-2">
+                                            <div class="uk-panel" uk-slider-parallax="scale: 0.9,1,0.9;">
+                                                <img data-src="assets/images/slider-1.jpeg" alt="slider-1" class="uk-width-1-1 uk-border-rounded" uk-img>
+                                            </div>
+                                        </li>
+                                        <li class="uk-width-1-2">
+                                            <div class="uk-panel" uk-slider-parallax="scale: 0.9,1,0.9;">
+                                                <img data-src="assets/images/slider-2.jpeg" alt="slider-2" class="uk-width-1-1 uk-border-rounded" uk-img>
+                                            </div>
+                                        </li>
+                                        <li class="uk-width-1-2">
+                                            <div class="uk-panel" uk-slider-parallax="scale: 0.9,1,0.9;">
+                                                <img data-src="assets/images/slider-8.jpeg" alt="slider-3" class="uk-width-1-1 uk-border-rounded" uk-img>
+                                            </div>
+                                        </li>
+                                        <li class="uk-width-1-2">
+                                            <div class="uk-panel" uk-slider-parallax="scale: 0.9,1,0.9;">
+                                                <img data-src="assets/images/slider-4.jpeg" alt="slider-4" class="uk-width-1-1 uk-border-rounded" uk-img>
+                                            </div>
+                                        </li>
+                                        <li class="uk-width-1-2">
+                                            <div class="uk-panel" uk-slider-parallax="scale: 0.9,1,0.9;">
+                                                <img data-src="assets/images/slider-5.jpeg" alt="slider-5" class="uk-width-1-1 uk-border-rounded" uk-img>
+                                            </div>
+                                        </li>
+                                        <li class="uk-width-1-2">
+                                            <div class="uk-panel" uk-slider-parallax="scale: 0.9,1,0.9;">
+                                                <img data-src="assets/images/slider-6.jpeg" alt="slider-6" class="uk-width-1-1 uk-border-rounded" uk-img>
+                                            </div>
+                                        </li>
+                                        <li class="uk-width-1-2">
+                                            <div class="uk-panel" uk-slider-parallax="scale: 0.9,1,0.9;">
+                                                <img data-src="assets/images/slider-7.jpeg" alt="slider-7" class="uk-width-1-1 uk-border-rounded" uk-img>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                                    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                                </div>
                             </div>
+                            <div class="uk-flex uk-flex-middle uk-text-light">
+                                <div class="uk-tile uk-tile-default cs-border-radius-medium uk-text-center">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, molestias natus quis est repudiandae hic fugit velit laboriosam voluptas explicabo. Libero dignissimos facilis porro doloribus explicabo excepturi est repudiandae, ad doloremque suscipit ea in mollitia iure omnis natus consequuntur alias. Repellat esse soluta earum atque. Optio deleniti cum voluptatem aliquam.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        </section>
+        <!-- Parallax Section-->
+        <section>
+            <div class="uk-height-large uk-background-cover uk-light uk-flex uk-flex-top" uk-parallax="bgy: -500; viewport: 0.5;" style="background-image: url('assets/images/parallaxbg.jpg');">
+            </div>
+        </section>
+        <!-- Background Image 2 Section-->
+        <section class="uk-position-relative uk-overflow-hidden">
+            <img data-srcset="assets/images/bgimage2.png, assets/images/bgimage2reverse.png 750w" alt="bg-image" class="uk-width-1-1" uk-img>
+            <div class="uk-position-cover uk-flex uk-flex-middle uk-overlay-default">
+                <div class="uk-container">
+                    <div class="uk-grid-medium uk-margin-auto uk-child-width-1-1" uk-grid>
+                        <div class="uk-text-left cs-text-white" uk-scrollspy="cls: uk-animation-fade; delay: 300; repeat:true;">
+                            <div class="uk-text-bold cs-card-header">Header</div>
+                            <p class="uk-text-normal cs-card-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima totam consectetur doloribus distinctio dolorem veniam, ullam explicabo iure delectus temporibus! Magnam, voluptatibus vero vel id expedita repudiandae et quia mollitia perspiciatis eius! Tempore sapiente nostrum dignissimos eveniet rem cumque sit necessitatibus. Ratione ducimus vero possimus recusandae quibusdam aperiam et dolorem.</p>
                         </div>
                     </div>
                 </div>

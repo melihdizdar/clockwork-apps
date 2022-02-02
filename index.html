@@ -12,8 +12,8 @@
 </head>
 <body>
     <header uk-sticky="top: 60px; sel-target: .target; cls-active: cs-navbar-bacground uk-navbar-sticky; cls-inactive: uk-light">
-        <div class="target uk-position-top uk-position-z-index active-navbar-background uk-navbar-sticky">
-            <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar style="position: relative; z-index: 980;">
+        <div class="target uk-position-top active-navbar-background uk-navbar-sticky">
+            <nav class="uk-navbar-container uk-navbar-transparent uk-position-relative" uk-navbar>
                 <div class="uk-navbar-left">
                     <a class="uk-navbar-item uk-text-small uk-link-reset" href="#" uk-toggle="target: #offcanvas-nav-primary">
                         <span uk-navbar-toggle-icon></span> <span class="uk-margin-small-left uk-visible@m uk-text-small cs-navbar-font">Menu</span>
@@ -69,7 +69,7 @@
         <!-- Title Section-->
         <section class="uk-section uk-padding-remove-horizontal cs-padding-medium">
             <div class="uk-container uk-padding-remove">
-                <div class="uk-width-2-3@l uk-margin-auto uk-text-center" uk-scrollspy="cls: uk-animation-fade; repeat: true; delay:300;">
+                <div class="uk-width-2-3@l uk-margin-auto uk-text-center" uk-scrollspy="target: > div; cls: uk-animation-fade; delay: 300; repeat:true;">
                     <div class="uk-margin-remove">
                         <div class="uk-text-bold cs-card-header uk-text-muted">KIDS</div>
                         <p class="uk-text-emphasis uk-text-normal cs-paragraph">Çocuklara unutamayacakları bir tatil yaşatmak için her ayrıntı düşünülerek tasarlanan Zeynep Hotel Spiky Kids Club’ün eğitimli ekibi, onlara doyasıya eğlenmenin keyfini yaşatıyor. </p>
@@ -81,9 +81,9 @@
         <section class="uk-section-large uk-padding-remove cs-line uk-section-primary">
             <div class="uk-container cs-margin-large-bottom">
                 <div class="uk-width-5-6@m uk-width-1-1@s uk-margin-auto cs-margin-large-top">
-                    <div class="uk-grid-medium" uk-grid>
-                        <div class="uk-width-3-5@m uk-width-1-1@s">
-                            <div class="uk-width-5-6@m uk-width-1-1@s" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
+                    <div class="uk-grid-medium" uk-grid uk-scrollspy="target: > div; delay: 300; repeat:true;">
+                        <div class="uk-width-3-5@m uk-width-1-1@s" uk-scrollspy-class="uk-animation-slide-left">
+                            <div class="uk-width-5-6@m uk-width-1-1@s">
                                 <div class="uk-flex uk-flex-center uk-margin-bottom">
                                     <img data-src="assets/images/spiky-logo.png" alt="spiky-logo" uk-img>
                                 </div>
@@ -97,7 +97,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="uk-width-2-5@m uk-width-1-1@s" uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
+                        <div class="uk-width-2-5@m uk-width-1-1@s" uk-scrollspy-class="uk-animation-slide-right">
                             <img data-src="assets/images/spiky-image.png" class="uk-width-1-1@s" alt="spiky-image" uk-img>
                         </div>
                     </div>
@@ -108,8 +108,8 @@
         <section class="uk-visible@m">
             <div class="uk-section uk-padding-remove-vertical uk-padding-remove-left cs-margin-medium-top">
                 <div class="uk-container uk-padding-remove-horizontal">
-                    <div class="uk-width-2-1 uk-margin-auto uk-text-center" uk-grid>
-                        <div class="uk-width-1-1@m uk-padding-remove-left" uk-scrollspy="cls: uk-animation-slide-top; repeat: true">
+                    <div class="uk-width-2-1 uk-margin-auto uk-text-center" uk-grid uk-scrollspy="target: > div; cls: uk-animation-fade; delay: 300; repeat:true;">
+                        <div class="uk-width-1-1@m uk-padding-remove-left">
                             <div class="uk-text-large cs-center-header uk-text-muted">Çocuklar İçin Etkinliklerimiz</div>
                         </div>
                     </div>
@@ -117,9 +117,9 @@
             </div>
             <div class="uk-section">
                     <div class="uk-container">
-                        <div class="uk-grid-medium" uk-grid>
-                            <div class="uk-width-1-3">
-                                <div class="uk-card" uk-scrollspy="cls: uk-animation-fade; repeat: true; delay:300;">
+                        <div class="uk-grid-medium" uk-grid uk-scrollspy="target: > div; delay: 300; repeat:true;">
+                            <div class="uk-width-1-3" uk-scrollspy-class="uk-animation-slide-top-small">
+                                <div class="uk-card">
                                     <div class="uk-card-media-top">
                                         <img data-src="assets/images/card-image-1.png" alt="card-image-1" class="uk-width-1-1" uk-img>
                                     </div>
@@ -135,8 +135,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="uk-width-1-3">
-                                <div class="uk-card" uk-scrollspy="cls: uk-animation-fade; repeat: true; delay:300;">
+                            <div class="uk-width-1-3" uk-scrollspy-class="uk-animation-slide-top-small">
+                                <div class="uk-card">
                                     <div class="uk-card-media-top">
                                         <img data-src="assets/images/card-image-2.png" alt="card-image-2" class="uk-width-1-1" uk-img>
                                     </div>
@@ -152,8 +152,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="uk-width-1-3">
-                                <div class="uk-card" uk-scrollspy="cls: uk-animation-fade; repeat: true; delay:300;">
+                            <div class="uk-width-1-3" uk-scrollspy-class="uk-animation-slide-top-small">
+                                <div class="uk-card">
                                     <div class="uk-card-media-top">
                                         <img data-src="assets/images/card-image-3.png" alt="card-image-3" class="uk-width-1-1" uk-img>
                                     </div>
@@ -169,8 +169,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="uk-width-1-3">
-                                <div class="uk-card" uk-scrollspy="cls: uk-animation-fade; repeat: true; delay:600;">
+                            <div class="uk-width-1-3" uk-scrollspy-class="uk-animation-slide-bottom-small">
+                                <div class="uk-card">
                                     <div class="uk-card-media-top">
                                         <img data-src="assets/images/card-image-1.png" alt="card-image-4" class="uk-width-1-1" uk-img>
                                     </div>
@@ -186,8 +186,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="uk-width-1-3">
-                                <div class="uk-card" uk-scrollspy="cls: uk-animation-fade; repeat: true; delay:600;">
+                            <div class="uk-width-1-3" uk-scrollspy-class="uk-animation-slide-bottom-small">
+                                <div class="uk-card">
                                     <div class="uk-card-media-top">
                                         <img data-src="assets/images/card-image-2.png" alt="card-image-5" class="uk-width-1-1" uk-img>
                                     </div>
@@ -201,8 +201,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="uk-width-1-3">
-                                <div class="uk-card" uk-scrollspy="cls: uk-animation-fade; repeat: true; delay:600;">
+                            <div class="uk-width-1-3" uk-scrollspy-class="uk-animation-slide-bottom-small">
+                                <div class="uk-card">
                                     <div class="uk-card-media-top">
                                         <img data-src="assets/images/card-image-3.png" alt="card-image-6" class="uk-width-1-1" uk-img>
                                     </div>
@@ -225,8 +225,8 @@
         <section class="uk-hidden@s">
             <div class="uk-section uk-padding-remove-vertical cs-margin-small-top cs-margin-xsmall-bottom">
                 <div class="uk-container uk-padding-remove-horizontal">
-                    <div class="uk-width-2-1 uk-margin-auto uk-text-center" uk-grid>
-                        <div class="uk-width-1-1@m uk-padding-remove-left" uk-scrollspy="cls: uk-animation-fade; repeat: true">
+                    <div class="uk-width-2-1 uk-margin-auto uk-text-center" uk-grid uk-scrollspy="target: > div; cls: uk-animation-fade; delay: 300; repeat:true;">
+                        <div class="uk-width-1-1@m uk-padding-remove-left">
                             <div class="uk-text-large cs-center-header uk-text-muted">Çocuklar İçin Etkinliklerimiz</div>
                         </div>
                     </div>
@@ -234,11 +234,11 @@
             </div>
             <div class="uk-section uk-padding-remove-vertical cs-margin-small-bottom">
                 <div class="uk-container">
-                    <div class="uk-position-relative uk-visible-toggle" uk-slider="autoplay: true; autoplay-interval:2000; center:true;">
-                        <ul class="uk-slider-items uk-grid">
+                    <div class="uk-position-relative uk-visible-toggle" uk-slider="autoplay: true; autoplay-interval:5000; center:true;">
+                        <ul class="uk-slider-items uk-grid" uk-scrollspy="target: > li; cls: uk-animation-fade; delay: 300; repeat:true;">
                             <li class="uk-width-1-1">
                                 <div class="uk-panel">
-                                    <div class="uk-card" uk-scrollspy="cls: uk-animation-fade; repeat: true; delay:300;">
+                                    <div class="uk-card">
                                         <div class="uk-card-media-top">
                                             <img data-src="assets/images/card-image-1.png" alt="card-image-1" class="uk-width-1-1" uk-img>
                                         </div>
@@ -257,7 +257,7 @@
                             </li>
                             <li class="uk-width-1-1">
                                 <div class="uk-panel">
-                                    <div class="uk-card" uk-scrollspy="cls: uk-animation-fade; repeat: true; delay:300;">
+                                    <div class="uk-card">
                                         <div class="uk-card-media-top">
                                             <img data-src="assets/images/card-image-2.png" alt="card-image-2" class="uk-width-1-1" uk-img>
                                         </div>
@@ -276,7 +276,7 @@
                             </li>
                             <li class="uk-width-1-1">
                                 <div class="uk-panel">
-                                    <div class="uk-card" uk-scrollspy="cls: uk-animation-fade; repeat: true; delay:300;">
+                                    <div class="uk-card">
                                         <div class="uk-card-media-top">
                                             <img data-src="assets/images/card-image-3.png" alt="card-image-3" class="uk-width-1-1" uk-img>
                                         </div>
@@ -295,7 +295,7 @@
                             </li>
                             <li class="uk-width-1-1">
                                 <div class="uk-panel">
-                                    <div class="uk-card" uk-scrollspy="cls: uk-animation-fade; repeat: true; delay:600;">
+                                    <div class="uk-card">
                                         <div class="uk-card-media-top">
                                             <img data-src="assets/images/card-image-1.png" alt="card-image-4" class="uk-width-1-1" uk-img>
                                         </div>
@@ -314,7 +314,7 @@
                             </li>
                             <li class="uk-width-1-1">
                                 <div class="uk-panel">
-                                    <div class="uk-card" uk-scrollspy="cls: uk-animation-fade; repeat: true; delay:600;">
+                                    <div class="uk-card">
                                         <div class="uk-card-media-top">
                                             <img data-src="assets/images/card-image-2.png" alt="card-image-5" class="uk-width-1-1" uk-img>
                                         </div>
@@ -331,7 +331,7 @@
                             </li>
                             <li class="uk-width-1-1">
                                 <div class="uk-panel">
-                                    <div class="uk-card" uk-scrollspy="cls: uk-animation-fade; repeat: true; delay:600;">
+                                    <div class="uk-card">
                                         <div class="uk-card-media-top">
                                             <img data-src="assets/images/card-image-3.png" alt="card-image-6" class="uk-width-1-1" uk-img>
                                         </div>
@@ -355,12 +355,12 @@
         <!-- Slider Section-->
         <seciton class="uk-section uk-section-primary">
             <div class="uk-container">
-                <div class="uk-width-1-2@m uk-margin-auto uk-text-center">
-                    <div class="uk-text-large cs-center-header cs-padding-gallery uk-text-muted" uk-scrollspy="cls: uk-animation-fade; repeat: true; delay:300;">Slider</div>
+                <div class="uk-width-1-2@m uk-margin-auto uk-text-center" uk-scrollspy="cls: uk-animation-fade; delay: 300; repeat:true;">
+                    <div class="uk-text-large cs-center-header cs-padding-gallery uk-text-muted">Slider</div>
                 </div>
             </div>
-            <div class="uk-container" uk-scrollspy="cls: uk-animation-fade; repeat: true; delay:300;">
-                <div class="uk-position-relative uk-visible-toggle uk-light" uk-slider="autoplay: true; autoplay-interval:2000; center:true;">
+            <div class="uk-container">
+                <div class="uk-position-relative uk-visible-toggle uk-light" uk-slider="autoplay: true; autoplay-interval:2000; center:true;" uk-scrollspy="cls: uk-animation-fade; delay: 300; repeat:true;">
                     <ul class="uk-slider-items uk-grid">
                         <li class="uk-width-1-3@l">
                             <div class="uk-panel">
@@ -421,12 +421,12 @@
         <!-- Slideshow Section-->
         <section class="uk-section">
             <div class="uk-container">
-                <div class="uk-width-1-2@m uk-margin-auto uk-text-center" uk-scrollspy="cls: uk-animation-fade; repeat: true; delay:300;">
+                <div class="uk-width-1-2@m uk-margin-auto uk-text-center" uk-scrollspy="cls: uk-animation-fade; delay: 300; repeat:true;">
                     <div class="uk-text-large cs-center-header cs-padding-gallery uk-text-muted">Slideshow</div>
                 </div>
             </div>
-            <div class="uk-container" uk-scrollspy="cls: uk-animation-fade; repeat: true; delay:300;">
-                <div uk-slideshow="animation:pull; autoplay: true; autoplay-interval:2000; center:true;" class="uk-position-relative uk-visible-toggle">
+            <div class="uk-container">
+                <div uk-slideshow="animation:pull; autoplay: true; autoplay-interval:2000; center:true;" class="uk-position-relative uk-visible-toggle" uk-scrollspy="cls: uk-animation-fade; delay: 300; repeat:true;">
                     <ul class="uk-slideshow-items uk-border-rounded">
                         <li>
                             <img data-src="assets/images/slider-6.jpeg" alt="slider-6" class="uk-width-1-1" uk-img uk-cover>
@@ -467,12 +467,12 @@
         <!-- Accordion Section-->
         <section class="uk-section uk-section-primary">
             <div class="uk-container">
-                <div class="uk-width-1-2@m uk-margin-auto uk-text-center" uk-scrollspy="cls: uk-animation-fade; repeat: true; delay:300;">
+                <div class="uk-width-1-2@m uk-margin-auto uk-text-center"  uk-scrollspy="cls: uk-animation-fade; delay: 300; repeat:true;">
                     <div class="uk-text-large cs-center-header cs-padding-gallery uk-text-muted">Accordion</div>
                 </div>
             </div>
             <div class="uk-container">
-                <ul uk-accordion="collapsible: true; animation: false;" uk-accordion uk-scrollspy="cls: uk-animation-fade; repeat: true; delay:300;">
+                <ul uk-accordion="collapsible: true; animation: false;" uk-accordion  uk-scrollspy="cls: uk-animation-fade; delay: 300; repeat:true;">
                     <li class="accordionClass">
                         <a class="uk-accordion-title uk-animation-toggle" href="#">Header 1</a>
                         <div class="uk-accordion-content uk-animation-slide-left-small">
@@ -497,19 +497,19 @@
         <!-- Tab and Switcher Section-->
         <section class="uk-section">
             <div class="uk-container">
-                <div class="uk-width-1-2@m uk-margin-auto uk-text-center" uk-scrollspy="cls: uk-animation-fade; repeat: true; delay:300;">
+                <div class="uk-width-1-2@m uk-margin-auto uk-text-center"  uk-scrollspy="cls: uk-animation-fade; delay: 300; repeat:true;">
                     <div class="uk-text-large cs-center-header cs-padding-gallery uk-text-muted">Tab and Switcher</div>
                 </div>
             </div>
-            <div class="uk-container">
-                <ul class="uk-flex-center" uk-tab uk-scrollspy="cls: uk-animation-fade; repeat: true; delay:300;">
+            <div class="uk-container"  uk-scrollspy="cls: uk-animation-fade; delay: 300; repeat:true;">
+                <ul class="uk-flex-center" uk-tab>
                     <li><a href="#">Card</a></li>
                     <li><a href="#">Slider</a></li>
                     <li><a href="#">Accordion</a></li>
                 </ul>
-                <ul class="uk-switcher uk-margin">
+                <ul class="uk-switcher uk-margin"  uk-scrollspy="target: > li; cls: uk-animation-fade; delay: 300; repeat:true;">
                     <li>
-                        <div class="uk-position-relative uk-visible-toggle" tabindex="-1" uk-slider="autoplay: true; autoplay-interval:2000;" uk-scrollspy="cls: uk-animation-fade; repeat: true;">
+                        <div class="uk-position-relative uk-visible-toggle" tabindex="-1" uk-slider="autoplay: true; autoplay-interval:2000;">
                             <ul class="uk-slider-items" uk-grid>
                                 <li class="uk-width-1-3@l">
                                     <div class="uk-panel">
@@ -627,7 +627,7 @@
                         </div>
                     </li>
                     <li>
-                        <div class="uk-position-relative uk-visible-toggle uk-border-rounded" tabindex="-1" uk-slider="autoplay: true; autoplay-interval:2000;" uk-scrollspy="cls: uk-animation-fade; repeat: true;">
+                        <div class="uk-position-relative uk-visible-toggle uk-border-rounded" tabindex="-1" uk-slider="autoplay: true; autoplay-interval:2000;">
                             <ul class="uk-slider-items" uk-grid>
                                 <li class="uk-width-1-3@l">
                                     <div class="uk-panel">
@@ -685,7 +685,7 @@
                         </div>
                     </li>
                     <li>
-                        <ul uk-accordion="collapsible: true; animation: false;" uk-accordion uk-scrollspy="cls: uk-animation-fade; repeat: true;">
+                        <ul uk-accordion="collapsible: true; animation: false;" uk-accordion>
                             <li class="accordionClass">
                                 <a class="uk-accordion-title uk-animation-toggle" href="#">Header 1</a>
                                 <div class="uk-accordion-content uk-animation-slide-left-small">
@@ -712,12 +712,12 @@
         <!-- Slider Case Section-->
         <section class="uk-section uk-section-primary uk-overflow-auto">
             <div class="uk-container">
-                <div class="uk-width-1-2@m uk-margin-auto uk-text-center">
-                    <div class="uk-text-large cs-center-header cs-padding-gallery uk-text-muted" uk-scrollspy="cls: uk-animation-fade; repeat: true; delay:300;">Slider Case</div>
+                <div class="uk-width-1-2@m uk-margin-auto uk-text-center"  uk-scrollspy="cls: uk-animation-fade; delay: 300; repeat:true;">
+                    <div class="uk-text-large cs-center-header cs-padding-gallery uk-text-muted">Slider Case</div>
                 </div>
             </div>
-            <div class="uk-position-relative uk-visible-toggle uk-overflow-hidden" tabindex="-1" uk-slider="autoplay:true; autoplay-interval:3000; center:true;">
-                <div class="uk-container" uk-scrollspy="cls: uk-animation-fade; repeat: true; delay:300;">
+            <div class="uk-position-relative uk-visible-toggle uk-overflow-hidden" tabindex="-1" uk-slider="autoplay:true; autoplay-interval:3000; center:true;"  uk-scrollspy="cls: uk-animation-fade; delay: 300; repeat:true;">
+                <div class="uk-container">
                     <ul class="uk-slider-items" uk-grid>
                         <!-- slider-parallax="opacity:0.7,1,0.7" -> slidera girmeden önce,sliderdayken,sliderdan çıkınca -->
                         <li class="uk-width-1-3@l">
@@ -770,22 +770,17 @@
                 <ul class="uk-slider-nav uk-dotnav numeric-dotnav uk-flex-center uk-margin-top uk-margin-remove-left">
             </div>
         </section>
-        <!-- Parallax Section-->
-        <section>
-            <div class="uk-height-large uk-background-cover uk-light uk-flex uk-flex-top" uk-parallax="bgy: -500; viewport: 0.5;" style="background-image: url('assets/images/parallaxbg.jpg');">
-            </div>
-        </section>
         <!-- Off-Canvas Section-->
         <section class="uk-section">
             <div class="uk-container">
-                <div class="uk-width-1-2@m uk-margin-auto uk-text-center">
-                    <div class="uk-text-large cs-center-header cs-padding-gallery uk-text-muted" uk-scrollspy="cls: uk-animation-fade; repeat: true; delay:300;">Off-Canvas</div>
+                <div class="uk-width-1-2@m uk-margin-auto uk-text-center" uk-scrollspy="cls: uk-animation-fade; delay: 300; repeat:true;">
+                    <div class="uk-text-large cs-center-header cs-padding-gallery uk-text-muted">Off-Canvas</div>
                 </div>
                 <div class="uk-margin-auto uk-text-center">
-                    <div class="uk-grid-medium" uk-grid>
+                    <div class="uk-grid-medium" uk-grid uk-scrollspy="cls: uk-animation-fade; delay: 300; repeat:true;">
                         <div class="uk-width-1-1@m">
-                            <button class="uk-button uk-button-default uk-margin-small-right" type="button" uk-toggle="target: #offcanvas-left" uk-scrollspy="cls: uk-animation-fade; repeat: true;">Left Sidebar</button>
-                            <button class="uk-button uk-button-default uk-margin-small-right" type="button" uk-toggle="target: #offcanvas-right" uk-scrollspy="cls: uk-animation-fade; repeat: true;">Right Sidebar</button>
+                            <button class="uk-button uk-button-default uk-margin-small-right" type="button" uk-toggle="target: #offcanvas-left">Left Sidebar</button>
+                            <button class="uk-button uk-button-default uk-margin-small-right" type="button" uk-toggle="target: #offcanvas-right">Right Sidebar</button>
                             <div id="offcanvas-left" uk-offcanvas="overlay: true;">
                                 <div class="uk-offcanvas-bar">
                                     <button class="uk-offcanvas-close" type="button" uk-close></button>
@@ -815,12 +810,12 @@
         <!-- Lightbox Section-->
         <section class="uk-section uk-section-primary">
             <div class="uk-container">
-                <div class="uk-width-1-2@m uk-margin-auto uk-text-center">
-                    <div class="uk-text-large cs-center-header cs-padding-gallery uk-text-muted" uk-scrollspy="cls: uk-animation-fade; repeat: true; delay:300;">Lightbox</div>
+                <div class="uk-width-1-2@m uk-margin-auto uk-text-center" uk-scrollspy="cls: uk-animation-fade; delay: 300; repeat:true;">
+                    <div class="uk-text-large cs-center-header cs-padding-gallery uk-text-muted">Lightbox</div>
                 </div>
             </div>
             <div class="uk-container">
-                <div class="uk-position-relative uk-visible-toggle uk-light" uk-slider="autoplay: true; autoplay-interval:2000; center:true;" uk-scrollspy="cls: uk-animation-fade; repeat: true; delay:300;">
+                <div class="uk-position-relative uk-visible-toggle uk-light" uk-slider="autoplay: true; autoplay-interval:2000; center:true;" uk-scrollspy="cls: uk-animation-fade; delay: 300; repeat:true;">
                     <ul class="uk-slider-items lightboxPost" uk-grid uk-lightbox="animation: slide;">
                         <li class="uk-width-1-3@l">
                             <div>
@@ -895,15 +890,15 @@
         <!-- Modal Section-->
         <section class="uk-section">
             <div class="uk-container">
-                <div class="uk-width-1-2@m uk-margin-auto uk-text-center" uk-scrollspy="cls: uk-animation-fade; repeat: true; delay:300;">
+                <div class="uk-width-1-2@m uk-margin-auto uk-text-center" uk-scrollspy="cls: uk-animation-fade; delay: 300; repeat:true;">
                     <div class="uk-text-large cs-center-header cs-padding-gallery uk-text-muted">Modal</div>
                 </div>
             </div>
             <div class="uk-container">
                 <div class="uk-margin-auto uk-text-center">
-                    <div class="uk-grid-medium" uk-grid>
+                    <div class="uk-grid-medium" uk-grid uk-scrollspy="cls: uk-animation-fade; delay: 300; repeat:true;">
                         <div class="uk-width-1-1">
-                            <p uk-margin uk-scrollspy="cls: uk-animation-fade; repeat: true; delay:300;">
+                            <p uk-margin>
                                 <a class="uk-button uk-button-default" href="#modal-group-1" uk-toggle>Open Modal</a>
                             </p>
                             <div id="modal-group-1" uk-modal="bg-close:false; esc-close:false;">
@@ -1034,77 +1029,17 @@
                 </div>
             </div>
         </section>
-        <!-- Background Image Section-->
-        <section class="uk-section uk-background-cover uk-background-fixed uk-cover-container uk-position-relative" style="background-image: url(assets/images/bgimage.jpg);">
-            <div class="uk-container">
-                <div class="uk-width-1-2@m uk-margin-auto uk-text-center">
-                    <div class="uk-text-large cs-center-header cs-padding-gallery uk-text-muted" uk-scrollspy="cls: uk-animation-fade; repeat: true; delay:300;">Background Image</div>
-                </div>
-            </div>
-            <div class="uk-container uk-container-large">
-                <div class="uk-grid-large uk-child-width-1-2@m uk-flex-middle" uk-grid>
-                    <div class="uk-flex uk-flex-middle">
-                        <div class="uk-position-relative uk-visible-toggle uk-light" uk-slider="autoplay: true; autoplay-interval:2000; center:true;" uk-scrollspy="cls: uk-animation-fade; repeat: true; delay:300;">
-                            <ul class="uk-slider-items uk-grid">
-                                <li class="uk-width-1-2">
-                                    <div class="uk-panel" uk-slider-parallax="scale: 0.9,1,0.9;">
-                                        <img data-src="assets/images/slider-1.jpeg" alt="slider-1" class="uk-width-1-1 uk-border-rounded" uk-img>
-                                    </div>
-                                </li>
-                                <li class="uk-width-1-2">
-                                    <div class="uk-panel" uk-slider-parallax="scale: 0.9,1,0.9;">
-                                        <img data-src="assets/images/slider-2.jpeg" alt="slider-2" class="uk-width-1-1 uk-border-rounded" uk-img>
-                                    </div>
-                                </li>
-                                <li class="uk-width-1-2">
-                                    <div class="uk-panel" uk-slider-parallax="scale: 0.9,1,0.9;">
-                                        <img data-src="assets/images/slider-8.jpeg" alt="slider-3" class="uk-width-1-1 uk-border-rounded" uk-img>
-                                    </div>
-                                </li>
-                                <li class="uk-width-1-2">
-                                    <div class="uk-panel" uk-slider-parallax="scale: 0.9,1,0.9;">
-                                        <img data-src="assets/images/slider-4.jpeg" alt="slider-4" class="uk-width-1-1 uk-border-rounded" uk-img>
-                                    </div>
-                                </li>
-                                <li class="uk-width-1-2">
-                                    <div class="uk-panel" uk-slider-parallax="scale: 0.9,1,0.9;">
-                                        <img data-src="assets/images/slider-5.jpeg" alt="slider-5" class="uk-width-1-1 uk-border-rounded" uk-img>
-                                    </div>
-                                </li>
-                                <li class="uk-width-1-2">
-                                    <div class="uk-panel" uk-slider-parallax="scale: 0.9,1,0.9;">
-                                        <img data-src="assets/images/slider-6.jpeg" alt="slider-6" class="uk-width-1-1 uk-border-rounded" uk-img>
-                                    </div>
-                                </li>
-                                <li class="uk-width-1-2">
-                                    <div class="uk-panel" uk-slider-parallax="scale: 0.9,1,0.9;">
-                                        <img data-src="assets/images/slider-7.jpeg" alt="slider-7" class="uk-width-1-1 uk-border-rounded" uk-img>
-                                    </div>
-                                </li>
-                            </ul>
-                            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-                            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
-                        </div>
-                    </div>
-                    <div class="uk-flex uk-flex-middle uk-text-light" uk-scrollspy="cls: uk-animation-fade; repeat: true; delay:300;">
-                        <div class="uk-tile uk-tile-default cs-border-radius-medium uk-text-center">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, molestias natus quis est repudiandae hic fugit velit laboriosam voluptas explicabo. Libero dignissimos facilis porro doloribus explicabo excepturi est repudiandae, ad doloremque suscipit ea in mollitia iure omnis natus consequuntur alias. Repellat esse soluta earum atque. Optio deleniti cum voluptatem aliquam.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
         <!-- Slider Case 2 Section-->
         <section class="uk-section uk-section-primary">
             <div class="uk-container">
-                <div class="uk-width-1-2@m uk-margin-auto uk-text-center">
-                    <div class="uk-text-large cs-center-header cs-padding-gallery uk-text-muted" uk-scrollspy="cls: uk-animation-fade; repeat: true; delay:300;">Slider Case 2</div>
+                <div class="uk-width-1-2@m uk-margin-auto uk-text-center" uk-scrollspy="uk-animation-fade; delay: 300; repeat:true;">
+                    <div class="uk-text-large cs-center-header cs-padding-gallery uk-text-muted">Slider Case 2</div>
                 </div>
             </div>
             <div class="uk-container uk-flex uk-flex-center uk-overflow-hidden">
-                <div class="uk-grid-large uk-grid-collapse uk-width-1-1" uk-grid>
-                    <div class="uk-position-relative uk-width-1-1 uk-slider-container uk-margin-auto" style="overflow: visible;" tabindex="-1" uk-slider="autoplay:true; autoplay-interval:3000; center:true; draggable:false;" uk-scrollspy="cls: uk-animation-fade; repeat: true; delay:300;">
-                        <ul class="uk-slider-items uk-child-width-1-2 cs-slider-image" uk-grid>
+                <div class="uk-grid-collapse uk-width-1-1" uk-grid uk-scrollspy="cls: uk-animation-fade; delay: 300; repeat:true;">
+                    <div class="uk-position-relative uk-width-1-1 uk-slider-container" style="overflow: visible;" tabindex="-1" uk-slider="autoplay:true; autoplay-interval:3000; center:true;">
+                        <ul class="uk-slider-items uk-child-width-1-2 cs-slider-image">
                             <li class="uk-padding-remove">
                                 <div class="uk-panel" uk-slider-parallax="scale: 0.9,1,0.9;">
                                     <img data-src="assets/images/case-1.jpg" alt="case-1" class="uk-width-1-1" uk-img>
@@ -1144,25 +1079,11 @@
             <ul class="uk-slider-nav uk-dotnav numeric-dotnav uk-flex-center uk-margin-top uk-margin-remove-left">
             </div>
         </section>
-        <!-- Background Image 2 Section-->
-        <section class="uk-position-relative uk-overflow-hidden">
-            <img data-srcset="assets/images/bgimage2.png, assets/images/bgimage2reverse.png 750w" alt="bg-image" class="uk-width-1-1" uk-img>
-            <div class="uk-position-cover uk-flex uk-flex-middle uk-overlay-default">
-                <div class="uk-container">
-                    <div class="uk-grid-medium uk-margin-auto uk-child-width-1-1" uk-grid>
-                        <div class="uk-text-left cs-text-white" uk-scrollspy="cls: uk-animation-fade; repeat: true; delay:300;">
-                            <div class="uk-text-bold cs-card-header">Header</div>
-                            <p class="uk-text-normal cs-card-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima totam consectetur doloribus distinctio dolorem veniam, ullam explicabo iure delectus temporibus! Magnam, voluptatibus vero vel id expedita repudiandae et quia mollitia perspiciatis eius! Tempore sapiente nostrum dignissimos eveniet rem cumque sit necessitatibus. Ratione ducimus vero possimus recusandae quibusdam aperiam et dolorem.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
         <!-- Filter Section-->
-        <section class="uk-section">
+        <section class="uk-section" uk-scrollspy="target: > div; cls: uk-animation-fade; delay: 300; repeat:true;">
             <div class="uk-container">
                 <div class="uk-width-1-2@m uk-margin-auto uk-text-center">
-                    <div class="uk-text-large cs-center-header cs-padding-gallery uk-text-muted" uk-scrollspy="cls: uk-animation-fade; repeat: true; delay:300;">Filter</div>
+                    <div class="uk-text-large cs-center-header cs-padding-gallery uk-text-muted">Filter</div>
                 </div>
             </div>
             <div class="uk-container">
@@ -1193,7 +1114,7 @@
                             </ul>
                         </div>
                     </div>
-                    <ul class="js-filter uk-child-width-1-2 uk-child-width-1-4@m uk-text-center" uk-grid="masonry: true">
+                    <ul class="js-filter uk-child-width-1-1 uk-child-width-1-4@m uk-text-center" uk-grid="masonry: true">
                         <li data-gender="male" data-hair="blonde" data-religion="catholic">
                             <div class="uk-card uk-card-default">
                                 <div class="uk-card-media-top uk-height-medium">
